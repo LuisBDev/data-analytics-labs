@@ -7,6 +7,26 @@ __pycache__/
 data/
 **/data/
 
+# ↓↓↓ NUEVAS REGLAS PARA DATOS MEF ↓↓↓
+# Datos MEF y Spark (archivos grandes)
+*.parquet
+*.csv
+*.orc
+*.avro
+
+# Carpetas de datos procesados
+data/output/
+data/raw/
+data/processed/
+data/features/
+data/models/
+
+# Archivos de datos temporales
+*.part*
+_SUCCESS
+_SUCCESS.crc
+.crc
+# ↑↑↑ FIN NUEVAS REGLAS ↑↑↑
 
 # C extensions
 *.so
@@ -159,3 +179,40 @@ venv.bak/
 
 # Test output
 test-output/
+
+# =============================================================================
+# Spark-specific ignores
+# =============================================================================
+
+# Spark logs and metadata
+spark-warehouse/
+derby.log
+metastore_db/
+metastore_db/*
+
+# Spark checkpoint directories
+checkpoint/
+checkpoints/
+**/checkpoint*/
+**/checkpoints*/
+
+# Spark temporary files
+*_temporary/
+*_temporary/*
+
+# Spark history server
+spark-event-logs/
+eventlogs/
+
+# Delta Lake (si usas Delta)
+_delta_log/
+
+# Jupyter/Colab specific
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Jupyter notebook outputs (pueden ser grandes)
+**/*.ipynb_outputs/
+
+# Colab
+sample_data/
