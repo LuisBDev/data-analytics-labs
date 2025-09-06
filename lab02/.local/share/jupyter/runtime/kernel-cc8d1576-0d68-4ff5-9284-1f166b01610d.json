@@ -1,0 +1,13 @@
+{
+  "shell_port": 59627,
+  "iopub_port": 43477,
+  "stdin_port": 50023,
+  "control_port": 37129,
+  "hb_port": 53353,
+  "ip": "127.0.0.1",
+  "key": "545b1d37-c2e47e16cdca5e76bb6a911e",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/home/jovyan/Fase1_CSV (2).ipynb"
+}

@@ -1,0 +1,13 @@
+{
+  "shell_port": 37325,
+  "iopub_port": 47367,
+  "stdin_port": 57797,
+  "control_port": 60907,
+  "hb_port": 44013,
+  "ip": "127.0.0.1",
+  "key": "2593a905-f281e272ee9b2d63977a9e00",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/home/jovyan/Fase2_EDA.ipynb"
+}

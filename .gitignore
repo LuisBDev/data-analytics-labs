@@ -13,6 +13,7 @@ data/
 *.csv
 *.orc
 *.avro
+raw_temp_parquet/
 
 # Carpetas de datos procesados
 data/output/
