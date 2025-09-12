@@ -177,6 +177,31 @@ venv.bak/
 *.swp
 *.swo
 *~
+# Carpetas de merge_pyspark
+**/merge_pyspark/
+merge_pyspark/
+
+**/.ipython/
+.ipython/
+
+**/.jupyter/
+.jupyter/
+
+**/.local/
+.local/
+
+
+**/.npm/
+.npm/
+
+**/.config/
+.config/
+
+**/.lrfm_results_hym/
+.lrfm_results_hym/
+
+**/.lrfm_segment_summary/
+.lrfm_segment_summary/
 
 # Test output
 test-output/
