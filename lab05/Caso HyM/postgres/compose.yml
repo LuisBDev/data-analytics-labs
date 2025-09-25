@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15  #  la imagen oficial de PostgreSQL
+    container_name: postgres-lab
+    ports:
+      - "5435:5432"  # puerto 5435 para evitar conflictos
+    environment:
+      POSTGRES_USER: sa
+      POSTGRES_PASSWORD: Analitica
+      POSTGRES_DB: DMT
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data

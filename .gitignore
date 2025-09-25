@@ -7,6 +7,22 @@ __pycache__/
 data/
 **/data/
 
+# PostgreSQL container data and logs
+postgres-data/
+pgdata/
+*.pid
+*.log
+*.crc
+*.pbix
+
+# MongoDB container data and logs
+mongodb-data/
+mongo-data/
+mongod.lock
+mongod.log
+
+*.pbix
+
 # ↓↓↓ NUEVAS REGLAS PARA DATOS MEF ↓↓↓
 # Datos MEF y Spark (archivos grandes)
 *.parquet
