@@ -7,6 +7,22 @@ __pycache__/
 data/
 **/data/
 
+# PostgreSQL container data and logs
+postgres-data/
+pgdata/
+*.pid
+*.log
+*.crc
+*.pbix
+
+# MongoDB container data and logs
+mongodb-data/
+mongo-data/
+mongod.lock
+mongod.log
+
+*.pbix
+
 # ↓↓↓ NUEVAS REGLAS PARA DATOS MEF ↓↓↓
 # Datos MEF y Spark (archivos grandes)
 *.parquet
@@ -177,7 +193,42 @@ venv.bak/
 *.swp
 *.swo
 *~
+# Carpetas de merge_pyspark
+**/merge_pyspark/
+merge_pyspark/
 
+**/.ipython/
+.ipython/
+
+**/.jupyter/
+.jupyter/
+
+**/.local/
+.local/
+
+
+**/.npm/
+.npm/
+
+**/.config/
+.config/
+
+**/lrfm_results_hym/
+lrfm_results_hym/
+
+**/lrfm_segment_summary/
+lrfm_segment_summary/
+
+**/churn_model_hym/
+churn_model_hym/
+
+
+**/churn_predictions_hym/
+churn_predictions_hym/
+
+
+**/.crc/
+**/.snappy.parquet/
 # Test output
 test-output/
 

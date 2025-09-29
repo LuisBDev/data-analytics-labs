@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  transformers-networks:
+    image: jupyter/pyspark-notebook
+    ports:
+      - "8000:8888"
+      - "4040:4040"
+    environment:
+      - JUPYTER_TOKEN=desarrollo
+      # Configuraciones de memoria para Spark
+      - SPARK_DRIVER_MEMORY=4g
+      - SPARK_EXECUTOR_MEMORY=4g
+      - SPARK_DRIVER_MAX_RESULT_SIZE=2g
+    volumes:
+      - ./:/home/jovyan
+    # Asignar más memoria al contenedor
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+        reservations:
+          memory: 4G
