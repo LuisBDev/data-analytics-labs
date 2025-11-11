@@ -1,0 +1,43 @@
+
+RESUMEN DE EJECUCIÓN MONTE CARLO
+================================
+Fecha: 2025-10-19 17:17:13
+Carpeta: salida_simulacion\ejecucion_20251019_171711
+
+CONFIGURACIÓN:
+- Número de actividades: 8
+- Número de simulaciones: 1000
+
+ACTIVIDADES CARGADAS:
+
+  A: (5.0, 7.0, 12.0)
+  B: (8.0, 10.0, 15.0)
+  C: (6.0, 8.0, 11.0)
+  D: (9.0, 12.0, 18.0)
+  E: (4.0, 6.0, 8.0)
+  F: (7.0, 9.0, 14.0)
+  G: (10.0, 13.0, 18.0)
+  H: (6.0, 9.0, 18.0)
+
+DEPENDENCIAS:
+
+  A depende de: INICIO
+  B depende de: A
+  C depende de: A
+  D depende de: B
+  E depende de: C
+  F depende de: D->E
+  G depende de: E
+  H depende de: F
+
+ARCHIVOS GENERADOS:
+
+  - 00_log_ejecucion.csv
+  - 01_tiempos_generados.csv
+  - 02_trazabilidad_rutas_criticas.csv
+  - 03_tiempos_tempranos.csv
+  - 04_tiempos_tardios.csv
+  - 05_holguras_y_criticidad.csv
+  - 06_resumen_estadistico.csv
+  - 07_rutas_criticas_frecuentes.csv
+  - 08_analisis_actividades.csv

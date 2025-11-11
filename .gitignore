@@ -30,6 +30,7 @@ mongod.log
 *.orc
 *.avro
 raw_temp_parquet/
+*.xlsx
 
 # Carpetas de datos procesados
 data/output/
