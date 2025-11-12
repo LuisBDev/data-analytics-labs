@@ -207,49 +207,6 @@ if transferencias_df is not None and comparacion_df is not None:
     
     st.markdown("---")
     
-    # Sección: Comparación de todos los escenarios
-    st.header("Análisis Global de Escenarios")
-    
-    col1, col2 = st.columns(2)
-    
-    with col1:
-        st.subheader("Costo Total por Escenario")
-        fig_total = px.bar(
-            comparacion_df,
-            x='Escenario',
-            y='Costo_Total',
-            color='Costo_Total',
-            color_continuous_scale='RdYlGn_r',
-            labels={'Costo_Total': 'Costo Total ($)'}
-        )
-        st.plotly_chart(fig_total, use_container_width=True)
-    
-    with col2:
-        st.subheader("Número de Transferencias")
-        fig_num = px.bar(
-            comparacion_df,
-            x='Escenario',
-            y='Num_Transferencias',
-            color='Num_Transferencias',
-            color_continuous_scale='Blues',
-            labels={'Num_Transferencias': 'Cantidad'}
-        )
-        st.plotly_chart(fig_num, use_container_width=True)
-    
-    # Tabla resumen de todos los escenarios
-    st.subheader("Resumen Comparativo")
-    st.dataframe(
-        comparacion_df.style.format({
-            'Costo_Transferencias': '${:.2f}',
-            'Costo_Rotura': '${:.2f}',
-            'Costo_Exceso': '${:.2f}',
-            'Costo_Total': '${:.2f}',
-            'Num_Transferencias': '{:.0f}',
-            'Unidades_Transferidas': '{:.0f}'
-        }).background_gradient(subset=['Costo_Total'], cmap='RdYlGn_r'),
-        use_container_width=True
-    )
-    
     # Información adicional
     st.sidebar.markdown("---")
     st.sidebar.info(
